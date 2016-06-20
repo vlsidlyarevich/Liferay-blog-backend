@@ -17,8 +17,6 @@
         <aspectjrt.version>1.8.9</aspectjrt.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <liferay.version>6.2.5</liferay.version>
-        <liferay.maven.plugin.version>6.2.5</liferay.maven.plugin.version>
     </properties>
 
     <parent>
@@ -108,53 +106,6 @@
             <artifactId>swagger-core</artifactId>
             <version>1.5.9</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.liferay.portal</groupId>-->
-            <!--<artifactId>portal-service</artifactId>-->
-            <!--<version>${liferay.version}</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.liferay.portal</groupId>-->
-            <!--<artifactId>util-bridges</artifactId>-->
-            <!--<version>${liferay.version}</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.liferay.portal</groupId>-->
-            <!--<artifactId>util-taglib</artifactId>-->
-            <!--<version>${liferay.version}</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.liferay.portal</groupId>-->
-            <!--<artifactId>util-java</artifactId>-->
-            <!--<version>${liferay.version}</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>javax.portlet</groupId>-->
-            <!--<artifactId>portlet-api</artifactId>-->
-            <!--<version>2.0</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet</groupId>-->
-            <!--<artifactId>javax.servlet-api</artifactId>-->
-            <!--<version>3.1.0</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet.jsp</groupId>-->
-            <!--<artifactId>jsp-api</artifactId>-->
-            <!--<version>2.0</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet</groupId>-->
-            <!--<artifactId>jstl</artifactId>-->
-            <!--<version>1.2</version>-->
-        <!--</dependency>-->
     </dependencies>
 
     <build>
@@ -171,68 +122,6 @@
                         <goals>
                             <goal>repackage</goal>
                         </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!--Liferay maven plugin-->
-            <!--<plugin>-->
-                <!--<groupId>com.liferay.maven.plugins</groupId>-->
-                <!--<artifactId>liferay-maven-plugin</artifactId>-->
-                <!--<version>${liferay.maven.plugin.version}</version>-->
-                <!--<configuration>-->
-                    <!--<liferayVersion>${liferay.version}</liferayVersion>-->
-                    <!--<pluginType>portlet</pluginType>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-
-            <!-- Frontend maven plugin -->
-            <plugin>
-                <groupId>com.github.eirslett</groupId>
-                <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.0</version>
-
-                <configuration>
-                    <workingDirectory>src/main/webapp</workingDirectory>
-                </configuration>
-
-                <executions>
-                    <execution>
-                        <id>install node and npm</id>
-                        <goals>
-                            <goal>install-node-and-npm</goal>
-                        </goals>
-                        <phase>generate-resources</phase>
-                        <configuration>
-                            <nodeVersion>v6.2.0</nodeVersion>
-                            <npmVersion>3.9.3</npmVersion>
-                            <nodeDownloadRoot>https://nodejs.org/dist/</nodeDownloadRoot>
-                            <npmDownloadRoot>http://registry.npmjs.org/npm/-/</npmDownloadRoot>
-                        </configuration>
-                    </execution>
-
-                    <!-- npm i -->
-                    <execution>
-                        <id>npm install</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>install</arguments>
-                            <installDirectory>src/main/webapp</installDirectory>
-                        </configuration>
-                    </execution>
-
-                    <!-- npm run tsc:w -->
-                    <execution>
-                        <id>npm run tsc</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>run tsc</arguments>
-                            <installDirectory>src/main/webapp</installDirectory>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -355,5 +244,4 @@
 
         </plugins>
     </build>
-
 </project>
