@@ -56,7 +56,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -108,53 +108,53 @@
             <artifactId>swagger-core</artifactId>
             <version>1.5.9</version>
         </dependency>
-        <dependency>
-            <groupId>com.liferay.portal</groupId>
-            <artifactId>portal-service</artifactId>
-            <version>${liferay.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.liferay.portal</groupId>
-            <artifactId>util-bridges</artifactId>
-            <version>${liferay.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.liferay.portal</groupId>
-            <artifactId>util-taglib</artifactId>
-            <version>${liferay.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.liferay.portal</groupId>
-            <artifactId>util-java</artifactId>
-            <version>${liferay.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.portlet</groupId>
-            <artifactId>portlet-api</artifactId>
-            <version>2.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.liferay.portal</groupId>-->
+            <!--<artifactId>portal-service</artifactId>-->
+            <!--<version>${liferay.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.liferay.portal</groupId>-->
+            <!--<artifactId>util-bridges</artifactId>-->
+            <!--<version>${liferay.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.liferay.portal</groupId>-->
+            <!--<artifactId>util-taglib</artifactId>-->
+            <!--<version>${liferay.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.liferay.portal</groupId>-->
+            <!--<artifactId>util-java</artifactId>-->
+            <!--<version>${liferay.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.portlet</groupId>-->
+            <!--<artifactId>portlet-api</artifactId>-->
+            <!--<version>2.0</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>javax.servlet-api</artifactId>-->
+            <!--<version>3.1.0</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet.jsp</groupId>-->
+            <!--<artifactId>jsp-api</artifactId>-->
+            <!--<version>2.0</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>jstl</artifactId>-->
+            <!--<version>1.2</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
@@ -176,15 +176,15 @@
             </plugin>
 
             <!--Liferay maven plugin-->
-            <plugin>
-                <groupId>com.liferay.maven.plugins</groupId>
-                <artifactId>liferay-maven-plugin</artifactId>
-                <version>${liferay.maven.plugin.version}</version>
-                <configuration>
-                    <liferayVersion>${liferay.version}</liferayVersion>
-                    <pluginType>portlet</pluginType>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.liferay.maven.plugins</groupId>-->
+                <!--<artifactId>liferay-maven-plugin</artifactId>-->
+                <!--<version>${liferay.maven.plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--<liferayVersion>${liferay.version}</liferayVersion>-->
+                    <!--<pluginType>portlet</pluginType>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
             <!-- Frontend maven plugin -->
             <plugin>
