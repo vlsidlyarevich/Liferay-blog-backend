@@ -7,7 +7,7 @@
     <groupId>com.github.vlsidlyarevich.liferay.blog.backend</groupId>
     <artifactId>liferay-blog-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>liferay-blog-backend</name>
     <description>Backend part of Liferay-integrated RESTFul Blog</description>
