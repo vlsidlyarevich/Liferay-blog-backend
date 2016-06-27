@@ -1,4 +1,5 @@
-##### Java backend part of angular2 rest client [rest client](https://github.com/solairerove/liferay-blog-client) on liferay portal
+### Java based backend part of angular2 rest client [rest client](https://github.com/solairerove/liferay-blog-client) as a part of [blog app](https://github.com/solairerove/blog-app)
+
 
 ##### Build `*.war` file: 
 
