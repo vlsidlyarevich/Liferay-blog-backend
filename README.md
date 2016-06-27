@@ -5,14 +5,6 @@
 
 ___
 
-##### Additional cookies:
-
-* `npm i -g json`
-* `sudo apt-get install python-pygments`
-* `curl 'http://localhost:8080/api/posts/' | json | pygmentize -l json`
-
-___
-
 ##### Run server:
 
 * `mvn spring-boot:run`
