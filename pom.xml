@@ -11,7 +11,7 @@
 
     <name>liferay-blog-backend</name>
     <description>Backend part of Liferay-integrated RESTFul Blog</description>
-    <url>https://github.com/solairerove/liferay-blog-backend</url>
+    <url>https://github.com/vlsidlyarevich/liferay-blog-backend</url>
 
     <properties>
         <aspectjrt.version>1.8.9</aspectjrt.version>
